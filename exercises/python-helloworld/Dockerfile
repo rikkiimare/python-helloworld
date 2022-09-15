@@ -4,6 +4,6 @@ LABEL maintainer="Rich Irving"
 COPY . /app
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+RUN pip install -r exercises/python-helloworld/requirements.txt
 
 CMD ["python","app.py"]
