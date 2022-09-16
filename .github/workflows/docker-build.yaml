@@ -44,4 +44,4 @@ jobs:
           file: ./exercises/python-helloworld/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: riccardopixel/python-helloworld:latest
+          tags: riccardopixel/python-helloworld:v1.1.0
