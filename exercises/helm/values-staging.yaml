@@ -1,0 +1,28 @@
+namespace:
+  name: staging
+ 
+image:
+  repository: nginx
+  tag: 1.18.0
+  imagePullPolicy: ifNotPresent 
+
+replicaCount: 1
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "50m"
+
+spec:
+  ports:
+  - port: 8111
+    protocol: TCP
+    targetPort: 8111
+  selector:
+    app: nginx
+    tag: alpine
+  type: ClusterIP
+
+data:
+  version: 1.18.0
+kind: ConfigMap
