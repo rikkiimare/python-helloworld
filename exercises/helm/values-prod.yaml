@@ -1,17 +1,21 @@
 namespace:
   name: prod
+
+service:
+  port: 80
+  type: ClusterIP
  
 image:
   repository: nginx
   tag: 1.17.0 
-  imagePullPolicy: ifNotPresent 
+  pullPolicy: ifNotPresent 
 
 replicaCount: 2
 
 resources:
   requests:
-    memory: "256Mi"
-    cpu: 70m"
+    memory: 256Mi
+    cpu: 70m
 
 spec:
   ports:
@@ -23,6 +27,5 @@ spec:
     tag: alpine
   type: ClusterIP
 
-data:
-  version: 1.17.0 
-kind: ConfigMap
+configmap:
+  data: "version: 1.17.0"
