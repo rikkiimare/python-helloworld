@@ -7,4 +7,4 @@
 
 This is my perfect moment, maybe not
 
-**Remote GitLab HEADING**
+**LOCAL HEADING**
