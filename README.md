@@ -7,5 +7,9 @@
 
 This is my perfect moment, maybe not
 
+<<<<<<< HEAD
 **LOCAL HEADING**
+=======
+**REMOTE HEADING 09:18**
+>>>>>>> origin/main
 
