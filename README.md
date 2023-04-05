@@ -7,5 +7,9 @@
 
 This is my perfect moment, maybe not
 
+<<<<<<< HEAD
 **THE MAIN BRANCH**
+=======
+**NEW BRANCH CHANGES**
+>>>>>>> new-branch
 
